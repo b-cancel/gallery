@@ -180,3 +180,17 @@ body {
 .fg-caption-desc {
 	white-space: pre-line;
 }
+
+/*make sure modal takes up entire space*/
+.fbx-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+body {
+	background-color: #303030 !important;
+	color: white;
+}
