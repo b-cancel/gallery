@@ -6,3 +6,12 @@ https://www.youtube.com/watch?v=5PsuJZdyqKo&feature=youtu.be&ab_channel=AKSHAYBH
 3. clone github folder named "websites" within htdocs
 4. add fresh wordpress install
 5. copy wp-content... plugins, themes, and uploads folder into fresh wordpress install
+
+b-cancel.github.io/websites/
+
+C:/xampp/htdocs/websites/
+
+C:\xampp\htdocs\websites/wp-content/uploads/
+C:\xampp\htdocs\websites/wp-content/themes/
+C:\xampp\htdocs\websites/wp-content/plugins/
+C:\xampp\htdocs\websites/wp-content/
