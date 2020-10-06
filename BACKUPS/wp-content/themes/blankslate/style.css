@@ -1,0 +1,182 @@
+/*
+Theme Name: BlankSlate
+Theme URI: https://github.com/tidythemes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: Please read: tidythemes.com/concept. BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Version: 2019.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2019 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+
+/*background color of main area*/
+#content {
+    background-color: #303030;
+	color: white;
+}
+
+/*let the caption background blend with the background*/
+.fg-caption {
+	background-color: #303030 !important;
+}
+
+/*change default icon*/
+.foogallery.fg-hover-plus .fg-caption-inner:before, .foogallery.fg-hover-plus .fg-image-overlay:before {
+    background-image: url(https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/play-icon-18-256.png) !important;
+}
+
+/*make wordpress header go away*/
+header.header {
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*overlay color*/
+.foogallery .fg-image-overlay {
+    background-color: rgba(0,0,0,.5);
+}
+
+/*overlay color and img always shown*/
+.foogallery.fg-hover-circle-plus:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-hover-external:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-hover-eye:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-hover-plus:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-hover-tint:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-hover-zoom2:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-hover-zoom3:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-hover-zoom:not(.fg-preset) .fg-item-inner .fg-image-overlay,
+.foogallery.fg-video-1:not(.fg-preset) .fg-type-video .fg-item-inner .fg-image-overlay,
+.foogallery.fg-video-2:not(.fg-preset) .fg-type-video .fg-item-inner .fg-image-overlay,
+.foogallery.fg-video-3:not(.fg-preset) .fg-type-video .fg-item-inner .fg-image-overlay,
+.foogallery.fg-video-4:not(.fg-preset) .fg-type-video .fg-item-inner .fg-image-overlay,
+.foogallery.fg-video-default:not(.fg-preset) .fg-type-video .fg-item-inner .fg-image-overlay {
+	visibility: visible;
+	opacity: 1
+}
+
+/*on hover change the overlay color*/
+.foogallery.fg-hover-circle-plus:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-hover-external:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-hover-eye:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-hover-plus:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-hover-tint:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-hover-zoom2:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-hover-zoom3:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-hover-zoom:not(.fg-preset) .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-video-1:not(.fg-preset) .fg-type-video .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-video-2:not(.fg-preset) .fg-type-video .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-video-3:not(.fg-preset) .fg-type-video .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-video-4:not(.fg-preset) .fg-type-video .fg-item-inner:hover .fg-image-overlay,
+.foogallery.fg-video-default:not(.fg-preset) .fg-type-video .fg-item-inner:hover .fg-image-overlay {
+	background-color: rgba(0,0,0,0);
+}
+
+/*everything having to do with title styling*/
+a {
+	text-decoration:none;
+}
+
+.descrip{
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top:8px;
+	margin-bottom:12px;
+	color: white;
+	font-family: "Arial", Gadget, sans-serif;
+	font-size: 14px;
+	line-height:1.25;
+}
+
+.myHeader{
+margin: 16px;
+margin-bottom: 8px;
+}
+
+.myHeader > span, .myHeader > .btn {
+display: inline-block;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #8c8c8c;
+ margin-left: 16px;
+margin-right: 16px;
+}
+
+.myTitle{
+color: white;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 28px;
+margin-right: 6px;
+}
+
+.btn > img {
+height:24px;
+}
+
+.btn {
+/*button styling reset*/
+margin:0px;
+padding:0px;
+border: none;
+/*other*/
+margin-left: 4px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.btn > img {
+filter: opacity(100%)
+}
+
+.btn > img:hover {
+filter: opacity(50%)
+}
+
+.btn > .invert {
+filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.btn > .invert:hover {
+filter: invert(100%) opacity(50%);
+  -webkit-filter: invert(100%) opacity(50%);
+}
+
+.foogallery {
+	margin-left: 16px !important;
+	margin-right: 16px !important;
+}
+
+/*titles also are not one line*/
+.foogallery .fg-caption-title {
+    white-space: normal;
+    overflow: auto !important;
+	text-overflow: clip;
+}
+
+/*hide scrollbar so that doesn't mess with styling*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*caption newlines make a new line*/
+.fg-caption-desc {
+	white-space: pre-line;
+}
