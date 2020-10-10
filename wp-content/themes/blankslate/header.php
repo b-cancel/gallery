@@ -16,5 +16,6 @@
 </div>
 <div id="site-description"><?php bloginfo( 'description' ); ?></div>
 </div>
+	<script src="https://kit.fontawesome.com/970dd1c7b2.js" crossorigin="anonymous"></script>
 </header>
 <div id="container">

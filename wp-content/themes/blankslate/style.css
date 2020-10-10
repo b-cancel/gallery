@@ -92,7 +92,7 @@ a {
 	margin-bottom:12px;
 	color: white;
 	font-family: "Arial", Gadget, sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	line-height:1.25;
 }
 
@@ -193,4 +193,56 @@ body {
 body {
 	background-color: #303030 !important;
 	color: white;
+}
+
+.qrCodeDescriptionTop{
+	font-family: "Arial", Gadget, sans-serif;
+	margin-bottom: 6px;
+	font-size: 18px,
+}
+
+.qrCodeDescriptionBottom{
+	margin-bottom: 12px;
+}
+
+.rights, .qrCodeDescriptionBottom, .rightsLast{
+	font-family: "Arial", Gadget, sans-serif;
+	font-size: 14px;
+}
+
+.rightsLast{
+	margin-bottom: 56px;
+}
+
+/*footer link stuff*/
+
+.footerLinks{
+margin:16px;
+}
+.btn2 {
+/*is circle*/
+	-moz-border-radius: 56px;
+  -webkit-border-radius: 56px;
+  border-radius: 56px;
+  /*is regular button size*/
+  height: 56px;
+  width: 56px;
+  /*is color of background until hovered*/
+  background-color: #303030;
+  /*everything else*/
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 4px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  margin-top: 4px;
+}
+
+a{
+text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.btn2:hover {
+  background-color: RoyalBlue;
 }
