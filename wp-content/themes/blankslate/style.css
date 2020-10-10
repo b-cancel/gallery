@@ -246,3 +246,8 @@ text-decoration: none;
 .btn2:hover {
   background-color: RoyalBlue;
 }
+
+.tinyPadding{
+	margin-left: 4px;
+	margin-right: 4px;
+}

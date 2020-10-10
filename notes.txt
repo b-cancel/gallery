@@ -11,6 +11,8 @@ b-cancel.github.io/websites/
 
 C:/xampp/htdocs/websites/
 
+*delete additional urls*
+
 C:\xampp\htdocs\websites/wp-content/uploads/
 C:\xampp\htdocs\websites/wp-content/themes/
 C:\xampp\htdocs\websites/wp-content/plugins/
